@@ -38,6 +38,31 @@ execute the following command in Command Prompt from the folder
 ```
 python archive_gui.py
 ```
+
+## Unzip JP Command Line
+
+A command-line version of the tool exists as 'unzip\_jp':
+
+```
+usage: unzip_jp [-h] [-x EXTRACTION_LOCATION] [-p PASSWORD] archive
+
+Unzips archives containing Shift-JIS-encoded characters
+
+positional arguments:
+  archive               The archive to extract.
+
+options:
+  -h, --help            show this help message and exit
+  -x EXTRACTION_LOCATION, --extraction-location EXTRACTION_LOCATION
+                        Location to place the extracted files. If not given,
+                        the current directory will be used.
+  -p PASSWORD, --password PASSWORD
+                        The password (if any) for the zip archive.
+```
+
+Can be installed by marking executable and placing in ~/.local/bin (or other $PATH location) on Linux.
+No other setup is necessary, uses python standard library only.
+
 ## Acknowledgements
 
  - [Norbert Pozar](https://github.com/rekka/unzip-jp)
