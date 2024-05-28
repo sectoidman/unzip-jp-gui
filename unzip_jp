@@ -15,12 +15,12 @@ argument_parser.add_argument('archive',
                              type=argparse.FileType('rb'),
                              help="The archive to extract.")
 
-argument_parser.add_argument('-x','--extraction-location',
+argument_parser.add_argument('-d','--extraction-location',
                              action='store',
                              default=os.getcwd(),
                              help="Location to place the extracted files. If not given, the current directory will be used.")
 
-argument_parser.add_argument('-p', '--password',
+argument_parser.add_argument('-P', '--password',
                              action='store',
                              help="The password (if any) for the zip archive.")
 

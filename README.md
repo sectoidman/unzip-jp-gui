@@ -44,7 +44,7 @@ python archive_gui.py
 A command-line version of the tool exists as 'unzip\_jp':
 
 ```
-usage: unzip_jp [-h] [-x EXTRACTION_LOCATION] [-p PASSWORD] archive
+usage: unzip_jp [-h] [-d EXTRACTION_LOCATION] [-P PASSWORD] archive
 
 Unzips archives containing Shift-JIS-encoded characters
 
@@ -53,10 +53,10 @@ positional arguments:
 
 options:
   -h, --help            show this help message and exit
-  -x EXTRACTION_LOCATION, --extraction-location EXTRACTION_LOCATION
+  -d EXTRACTION_LOCATION, --extraction-location EXTRACTION_LOCATION
                         Location to place the extracted files. If not given,
                         the current directory will be used.
-  -p PASSWORD, --password PASSWORD
+  -P PASSWORD, --password PASSWORD
                         The password (if any) for the zip archive.
 ```
 
